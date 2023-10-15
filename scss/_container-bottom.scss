@@ -1,0 +1,83 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-bottom {
+  margin: 0 auto;
+  padding: 100px 110px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include mq(sm) {
+    flex-direction: column-reverse;
+    padding: 100px 50px 100px;
+  }
+  .box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .box-address {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .box-img-company {
+      height: 48px;
+      width: 38px;
+    }
+    .title-company {
+      color: rgb(42, 85, 202);
+      font-weight: 800;
+      .span-company {
+        font-style: italic;
+      }
+    }
+  }
+  .box-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .title {
+      color: $primaryColor;
+      font-size: 16px;
+    }
+    .box-newsletter {
+      display: flex;
+      gap: 3px;
+      .input {
+        height: 30px;
+        width: 200px;
+        background-color: transparent;
+        border: 1px solid rgb(200, 194, 194);
+        border-radius: 4px;
+      }
+      .btn-subscribe {
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        border-radius: 4px;
+        &:hover {
+          background-color: white;
+          color: $secondaryColor;
+        }
+      }
+    }
+    .box-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .box-icons {
+        display: flex;
+        gap: 20px;
+      }
+      .icon {
+        font-size: 28px;
+        color: $thirdColor;
+      }
+    }
+  }
+}

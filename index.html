@@ -1,0 +1,680 @@
+<!-- https://www.figma.com/file/EKHzqayrznXXtx1p6uUXc9/Responsive%2FComponents-Landing-Page---Construction-Company-(Community)?type=design&node-id=47-348&mode=design&t=TykZXmTzNRACyyQA-0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0dd386a1c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Work+Sans:wght@300;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="container-header-inside">
+          <div class="box-company">
+            <div class="box-img-company">
+              <img src="img/Group-company.png" alt="company-logo" />
+            </div>
+            <div>
+              <h2 class="title-company">
+                <span class="span-company">The</span>Box
+              </h2>
+            </div>
+          </div>
+          <nav>
+            <div class="navbar">
+              <i
+                class="icon-hamburger-menu fa-solid fa-bars"
+                id="iconHamburgerMenu"
+              ></i>
+              <i class="icon-close-menu fa-solid fa-x" id="iconCloseMenu"></i>
+              <ul class="list-nav" id="listNavMenu">
+                <li><a class="li-nav" href="#hero">Home</a></li>
+                <li><a class="li-nav" href="#aboutUs">About Us</a></li>
+                <li><a class="li-nav" href="#projects">Projects</a></li>
+                <li><a class="li-nav" href="#services">Services</a></li>
+                <li><a class="li-nav" href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-hero" id="hero">
+        <div class="box-img-hero">
+          <img
+            class="img-hero active-feauture-projects"
+            src="https://images.unsplash.com/photo-1435575653489-b0873ec954e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="building"
+          />
+          <img
+            class="img-hero"
+            src="https://images.pexels.com/photos/1098460/pexels-photo-1098460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="building"
+          />
+          <img
+            class="img-hero"
+            src="https://images.pexels.com/photos/443378/pexels-photo-443378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="building"
+          />
+        </div>
+        <div class="box-title-hero">
+          <h1 class="title-hero">Bulding things is our mission.</h1>
+        </div>
+        <div class="box-feauture-projects">
+          <div class="box-feauture-projects-title-hero">
+            <h4 class="title-feature-projects">Feature Projects</h4>
+          </div>
+          <p class="text-feauture-projects active-feauture-projects">
+            The National University of Architecture
+          </p>
+          <p class="text-feauture-projects">The Museum of Egypt</p>
+          <p class="text-feauture-projects">The International T&M Office</p>
+          <div class="box-buttons-hero">
+            <button class="btn-arrow btn-left" id="arrowBack">
+              <i class="icon-arrow fa-solid fa-arrow-left"></i> Back
+            </button>
+            <button class="btn-arrow" id="arrowNext">
+              Next <i class="icon-arrow fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-reputation">
+        <div class="box-title-reputation">
+          <h2 class="title">Our Reputation</h2>
+        </div>
+        <div class="container-cards">
+          <div class="card-reputation">
+            <div class="box-img-reputation">
+              <img src="img/Vector2.png" alt="bestservices-img" />
+            </div>
+            <h3>Best Services</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+              qui.
+            </p>
+          </div>
+          <div class="card-reputation">
+            <div class="box-img-reputation">
+              <img src="img/Vector2.png" alt="bestservices-img" />
+            </div>
+            <h3>Best Teams</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+              qui.
+            </p>
+          </div>
+          <div class="card-reputation">
+            <div class="box-img-reputation">
+              <img src="img/Vector1.png" alt="bestservices-img" />
+            </div>
+            <h3>Best Designs</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+              qui.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-about-us" id="aboutUs">
+        <div class="box-img">
+          <img src="img/unsplash_6anudmpILw4.png" alt="" />
+        </div>
+        <div class="box-about-us">
+          <h3 class="title">About us</h3>
+          <p class="text">
+            For more than 30 years we have been delivering world-class
+            construction and we’ve built many lasting relationships along the
+            way.
+          </p>
+          <p class="text">
+            We’ve matured into an industry leader and trusted resource for those
+            seeking quality, innovation and reliability when building in the
+            U.S.
+          </p>
+          <a href="#stats"
+            ><button class="btn-about-us">More on Our History</button></a
+          >
+        </div>
+      </div>
+      <div class="container-services" id="services">
+        <div class="box-title-services">
+          <h3 class="title-services">Services</h3>
+        </div>
+        <div class="container-cards-services">
+          <div class="box-card-services card-white">
+            <div class="box-img-services">
+              <img src="img/icon_constr.png" alt="" />
+            </div>
+            <h4 class="title-card text-blue">Construction</h4>
+          </div>
+          <div class="box-card-services card-blue">
+            <div class="box-img-services">
+              <img src="img/icon_reno.png" alt="" />
+            </div>
+            <h4 class="title-card text-white">Renovation</h4>
+          </div>
+          <div class="box-card-services card-white">
+            <div class="box-img-services">
+              <img src="img/icon_consultation.png" alt="" />
+            </div>
+            <h4 class="title-card text-blue">Consultation</h4>
+          </div>
+          <div class="box-card-services card-blue">
+            <div class="box-img-services">
+              <img src="img/icon_repair.png" alt="" />
+            </div>
+            <h4 class="title-card text-white">Repair Services</h4>
+          </div>
+          <div class="box-card-services card-white">
+            <div class="box-img-services">
+              <img src="img/icon_arch.png" alt="" />
+            </div>
+            <h4 class="title-card text-blue">Architecture</h4>
+          </div>
+          <div class="box-card-services card-blue">
+            <div class="box-img-services">
+              <img src="img/icon_elekctric.png" alt="" />
+            </div>
+            <h4 class="title-card text-white">Electric</h4>
+          </div>
+        </div>
+      </div>
+      <div class="container-stats" id="stats">
+        <div class="box-left">
+          <div class="box-projects">
+            <div class="box-img">
+              <img src="img/illus projectcopmpl.png" alt="img_pen" />
+            </div>
+            <h3 class="title">123</h3>
+            <p class="text">Project Completed</p>
+          </div>
+          <div class="box-clients">
+            <div class="box-img">
+              <img src="img/illus happy.png" alt="img_clients" />
+            </div>
+            <h3 class="title">84</h3>
+            <p class="text">Happy Clients</p>
+          </div>
+          <div class="box-awards">
+            <div class="box-img">
+              <img src="img/illus awards.png" alt="img_awards" />
+            </div>
+            <h3 class="title">37</h3>
+            <p class="text">Awards Win</p>
+          </div>
+          <div class="box-years">
+            <div class="box-img">
+              <img src="img/illus yearsinbussines.png" alt="img_years" />
+            </div>
+            <h3 class="title">30</h3>
+            <p class="text">Years in Business</p>
+          </div>
+        </div>
+        <div class="box-right">
+          <h2 class="title">30 Years Experience</h2>
+          <p class="text">
+            Our company has been the landing provided construction services to
+            clients throughout the USA since 1988
+          </p>
+          <a href="#contact"><button class="btn-stats">Contact Us</button></a>
+        </div>
+      </div>
+      <div class="container-ads">
+        <div class="box-left">
+          <h3 class="title">Free consultation with exceptional quality</h3>
+          <p class="text">Just one call away: +84 1102 2703</p>
+        </div>
+        <div class="box-right">
+          <a href="#contact"
+            ><button class="btn-ads">Get your consultation</button></a
+          >
+        </div>
+      </div>
+      <div class="container-projects" id="projects">
+        <div class="box-nav-projects">
+          <h4 class="title">Projects</h4>
+          <ul class="list-items" id="ListItemsProjects">
+            <li class="item item-blue">All</li>
+            <li class="item">Commercial</li>
+            <li class="item">Residential</li>
+            <li class="item">All</li>
+          </ul>
+        </div>
+        <div class="box-projects">
+          <div class="box-projects-top">
+            <div class="box-foto-desc">
+              <div class="box-foto">
+                <img src="img/unsplash_T0iFfJw-rB0.png" alt="bulding" />
+              </div>
+              <div class="box-desc">
+                <h4 class="title">Wildstone Infra Hotel</h4>
+                <p class="text">2715 Ash Dr San Jose, South Dakota</p>
+              </div>
+            </div>
+            <div class="box-foto-desc">
+              <div class="box-foto">
+                <img src="img/unsplash_8oRCwrBn_Fc.png" alt="bulding" />
+              </div>
+              <div class="box-desc">
+                <h4 class="title">Wish Ston Building</h4>
+                <p class="text">2972 Westheimer Rd. Santa Ana, Ilinois</p>
+              </div>
+            </div>
+            <div class="box-foto-desc">
+              <div class="box-foto">
+                <img src="img/unsplash_UV81E0oXXWQ.png" alt="bulding" />
+              </div>
+              <div class="box-desc">
+                <h4 class="title">Mr.Parkinston's House</h4>
+                <p class="text">3517 W Gray St. Utica, Pensylwania</p>
+              </div>
+            </div>
+            <div class="box-foto-desc">
+              <div class="box-foto">
+                <img src="img/unsplash_gMes5dNykus.png" alt="bulding" />
+              </div>
+              <div class="box-desc">
+                <h4 class="title">Oregano Height</h4>
+                <p class="text">2464 Royal Ln, Mesa, New Jersey</p>
+              </div>
+            </div>
+          </div>
+          <div class="box-slayder">
+            <button class="btn" id="arrowLeft">
+              <i class="icon-arrow fa-solid fa-arrow-left"></i>Back
+            </button>
+            <div class="box-dots">
+              <div class="dot dot-blue"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <button class="btn" id="arrowRight">
+              Next<i class="icon-arrow fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-contact" id="contact">
+        <h3 class="title">What can us do for you?</h3>
+        <p class="text">
+          We are ready to work on a project of any complexity, whether it's
+          commercial or residential.
+        </p>
+        <form action="#">
+          <div class="box-form">
+            <div class="box-firstline">
+              <div class="box-input">
+                <input
+                  class="input"
+                  type="text"
+                  id="name"
+                  placeholder="Your name *"
+                />
+                <p class="error" id="errorName"></p>
+              </div>
+              <div class="box-input">
+                <input
+                  class="input"
+                  type="text"
+                  id="email"
+                  placeholder="Email*"
+                />
+                <p class="error" id="errorEmail"></p>
+              </div>
+            </div>
+            <div class="box-secondline">
+              <div class="box-input">
+                <select class="input" name="reason" id="reason">
+                  <option value="">Reason for Contacting*</option>
+                  <option value="1">Zakup Mieszkania</option>
+                  <option value="2">Zakup Domu</option>
+                </select>
+                <p class="error" id="errorReason"></p>
+              </div>
+              <div class="box-input">
+                <input
+                  class="input"
+                  type="telephone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+                <p class="error" id="errorPhone"></p>
+              </div>
+            </div>
+            <div class="box-input">
+              <textarea
+                name="message"
+                id="message"
+                class="input-message"
+                placeholder="Message"
+              ></textarea>
+              <p class="error" id="errorMessage"></p>
+            </div>
+          </div>
+          <p class="text-required">* Indicates a required field</p>
+        </form>
+        <button class="btn-contact" id="btnContact">Submit</button>
+      </div>
+      <div class="container-bottom">
+        <div class="box-left">
+          <address class="box-address">
+            <p class="address">
+              <i class="fa-solid fa-house"></i>: 6391 Eligin St Cerina, Delawere
+              10289
+            </p>
+            <a class="address" href="hello@gmail.com"
+              ><i class="fa-regular fa-envelope"></i>: hello@gmail.com</a
+            >
+            <a class="address" href="+48 012124324324"
+              ><i class="fa-solid fa-phone"></i>: +48 012124324324</a
+            >
+          </address>
+          <div class="box-company">
+            <div class="box-img-company">
+              <img src="img/Group-company.png" alt="company-logo" />
+            </div>
+            <div>
+              <h2 class="title-company">
+                <span class="span-company">The</span>Box
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="box-right">
+          <h4 class="title">NEWSLETTER:</h4>
+          <div class="box-newsletter">
+            <input class="input" type="text" />
+            <button class="btn-subscribe">Subscribe</button>
+          </div>
+          <div class="box-socials">
+            <h4 class="title">SOCIAL:</h4>
+            <div class="box-icons">
+              <i class="icon fa-brands fa-facebook"></i>
+              <i class="icon fa-brands fa-linkedin"></i>
+              <i class="icon fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <p class="text">TheBox Company © 2022. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script>
+      // KOMENTARZ: Dobrze pobrane elementy i nazwy też fajne, tylko zastosowałbym userPassword i userPasswordConfirm. Cyfry mimo wszystko mało uściślają jaka różnica jest między zmiennymi
+      const btnContact = document.querySelector("#btnContact");
+      const name = document.querySelector("#name");
+      const email = document.querySelector("#email");
+      const reason = document.querySelector("#reason");
+      const phone = document.querySelector("#phone");
+      const message = document.querySelector("#message");
+
+      const errorName = document.querySelector("#errorName");
+      const errorEmail = document.querySelector("#errorEmail");
+      const errorReason = document.querySelector("#errorReason");
+      const errorPhone = document.querySelector("#errorPhone");
+      const errorMessage = document.querySelector("#errorMessage");
+
+      let isErrorName = true;
+      let isTouchedName = false;
+      let isErrorEmail = true;
+      let isTouchedEmail = false;
+      let isErrorReason = true;
+      let isTouchedReason = false;
+      let isErrorPhone = true;
+      let isTouchedPhone = false;
+      let isErrorMessage = true;
+      let isTouchedMessage = false;
+
+      name.addEventListener("input", () => {
+        if (!isTouchedName) return;
+        isErrorName = true;
+        if (!name.value.trim().length) {
+          errorName.innerText = "Wpisz imię";
+        } else if (name.value.trim().length <= 3) {
+          errorName.innerText = "Za krótka nazwa";
+        } else {
+          errorName.innerText = "";
+          isErrorName = false;
+        }
+      });
+      name.addEventListener("blur", () => {
+        isTouchedName = true;
+        isErrorName = true;
+        if (!name.value.trim().length) {
+          errorName.innerText = "Wpisz imię";
+        } else if (name.value.trim().length <= 3) {
+          errorName.innerText = "Za krótka nazwa";
+        } else {
+          errorName.innerText = "";
+          isErrorName = false;
+        }
+      });
+      email.addEventListener("input", () => {
+        if (!isTouchedEmail) return;
+        isErrorEmail = true;
+        if (!email.value.trim().length) {
+          errorEmail.innerText = "Wpisz email";
+        } else if (email.value.trim().length <= 3) {
+          errorEmail.innerText = "Za krótka nazwa";
+        } else if (!email.value.includes("@")) {
+          errorEmail.innerText = "nieprawidłowy email";
+        } else {
+          errorEmail.innerText = "";
+          isErrorEmail = false;
+        }
+      });
+      email.addEventListener("blur", () => {
+        isTouchedEmail = true;
+        isErrorEmail = true;
+        if (!email.value.trim().length) {
+          errorEmail.innerText = "Wpisz email";
+        } else if (email.value.trim().length <= 3) {
+          errorEmail.innerText = "Za krótka nazwa";
+        } else if (!email.value.includes("@")) {
+          errorEmail.innerText = "nieprawidłowy email";
+        } else {
+          errorEmail.innerText = "";
+          isErrorEmail = false;
+        }
+      });
+
+      reason.addEventListener("input", () => {
+        if (!isTouchedReason) return;
+        isErrorReason = true;
+        if (reason.value === "") {
+          errorReason.innerText = "Wybierz powód do kontaktu";
+        } else {
+          errorReason.innerText = "";
+          isErrorReason = false;
+        }
+      });
+      reason.addEventListener("blur", () => {
+        isTouchedReason = true;
+        isErrorReason = true;
+        if (reason.value === "") {
+          errorReason.innerText = "Wybierz powód do kontaktu";
+        } else {
+          errorReason.innerText = "";
+          isErrorReason = false;
+        }
+      });
+
+      phone.addEventListener("input", () => {
+        if (!isTouchedPhone) return;
+        isErrorPhone = true;
+        let regExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
+        if (phone.value.trim().length <= 7) {
+          errorPhone.innerText = "Wpisz prawidłowy numer";
+        } else if (!phone.value.match(regExp)) {
+          errorPhone.innerText = "nieprawidłowy numer";
+        } else {
+          errorPhone.innerText = "";
+          isErrorPhone = false;
+        }
+      });
+      phone.addEventListener("blur", () => {
+        isTouchedPhone = true;
+        isErrorPhone = true;
+        let regExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
+        if (phone.value.trim().length <= 7) {
+          errorPhone.innerText = "Wpisz prawidłowy numer";
+        } else if (!phone.value.match(regExp)) {
+          errorPhone.innerText = "nieprawidłowy numer";
+        } else {
+          errorPhone.innerText = "";
+          isErrorPhone = false;
+        }
+      });
+
+      message.addEventListener("input", () => {
+        if (!isTouchedMessage) return;
+        isErrorMessage = true;
+        if (!message.value.trim().length) {
+          errorMessage.innerText = "Wpisz wiadomość";
+        } else if (message.value.trim().length <= 10) {
+          errorMessage.innerText = "Za krótka wiadomość";
+        } else {
+          errorMessage.innerText = "";
+          isErrorMessage = false;
+        }
+      });
+      message.addEventListener("blur", () => {
+        isTouchedMessage = true;
+        isErrorMessage = true;
+        if (!message.value.trim().length) {
+          errorMessage.innerText = "Wpisz wiadomość";
+        } else if (message.value.trim().length <= 10) {
+          errorMessage.innerText = "Za krótka wiadomość";
+        } else {
+          errorMessage.innerText = "";
+          isErrorMessage = false;
+        }
+      });
+      btnContact.addEventListener("click", () => {
+        console.log(
+          !isErrorName,
+          !isErrorEmail,
+          !isErrorReason,
+          !isErrorPhone,
+          !isErrorMessage
+        );
+        if (
+          !isErrorName &&
+          !isErrorEmail &&
+          !isErrorReason &&
+          !isErrorPhone &&
+          !isErrorMessage
+        ) {
+          console.log("hasło prawidłowe");
+        } else {
+          alert("Popraw dane w formularzu");
+        }
+        isTouchedName = false;
+        isTouchedEmail = false;
+        isTouchedReason = false;
+        isTouchedPhone = false;
+        isTouchedMessage = false;
+      });
+
+      ///////////////////////////////////////////////////////////////////
+      const arrowBack = document.querySelector("#arrowBack");
+      const arrowNext = document.querySelector("#arrowNext");
+      const featureProjectsList = document.querySelectorAll(
+        ".text-feauture-projects"
+      );
+      const featureProjectsImgList = document.querySelectorAll(".img-hero");
+
+      let indexFutureProjects = 0;
+
+      arrowNext.addEventListener("click", () => {
+        featureProjectsList.forEach((element) =>
+          element.classList.remove("active-feauture-projects")
+        );
+        featureProjectsImgList.forEach((element) =>
+          element.classList.remove("active-feauture-projects")
+        );
+        index++;
+        index === featureProjectsList.length ? (index = 0) : (index = index);
+        featureProjectsList[index].classList.add("active-feauture-projects");
+        featureProjectsImgList[index].classList.add("active-feauture-projects");
+      });
+
+      arrowBack.addEventListener("click", () => {
+        featureProjectsList.forEach((element) =>
+          element.classList.remove("active-feauture-projects")
+        );
+        featureProjectsImgList.forEach((element) =>
+          element.classList.remove("active-feauture-projects")
+        );
+        index--;
+        index === -1
+          ? (index = featureProjectsList.length - 1)
+          : (index = index);
+        featureProjectsList[index].classList.add("active-feauture-projects");
+        featureProjectsImgList[index].classList.add("active-feauture-projects");
+      });
+
+      const iconHamburgerMenu = document.querySelector("#iconHamburgerMenu");
+      const iconCloseMenu = document.querySelector("#iconCloseMenu");
+      const listNavMenu = document.querySelector("#listNavMenu");
+
+      iconHamburgerMenu.addEventListener("click", () => {
+        listNavMenu.classList.toggle("show");
+        iconCloseMenu.classList.toggle("show-icon");
+      });
+
+      iconCloseMenu.addEventListener("click", () => {
+        listNavMenu.classList.toggle("show");
+        iconCloseMenu.classList.toggle("show-icon");
+      });
+
+      const menuProjectsItems = document.querySelectorAll(".item");
+      menuProjectsItems.forEach((el) => {
+        el.addEventListener("click", () => {
+          menuProjectsItems.forEach((element) =>
+            element.classList.remove("item-blue")
+          );
+          el.classList.add("item-blue");
+        });
+      });
+
+      const arrowLeft = document.querySelector("#arrowLeft");
+      const arrowRight = document.querySelector("#arrowRight");
+      const dots = document.querySelectorAll(".dot");
+      let index = 0;
+
+      arrowRight.addEventListener("click", () => {
+        dots.forEach((element) => element.classList.remove("dot-blue"));
+        index++;
+        index === dots.length ? (index = 0) : (index = index);
+        dots[index].classList.add("dot-blue");
+      });
+
+      arrowLeft.addEventListener("click", () => {
+        dots.forEach((element) => element.classList.remove("dot-blue"));
+        index--;
+        index === -1 ? (index = dots.length - 1) : (index = index);
+        dots[index].classList.add("dot-blue");
+      });
+    </script>
+  </body>
+</html>

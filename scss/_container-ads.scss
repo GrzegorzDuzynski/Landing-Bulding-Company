@@ -1,0 +1,70 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-ads {
+  height: 220px;
+  margin: 0 auto;
+  padding: 20px 110px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+
+  @include mq(lg) {
+    padding: 20px 50px;
+    gap: 40px;
+  }
+  @include mq(sm) {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  .box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include mq(sm) {
+      justify-content: center;
+      align-items: center;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      @include mq(lg) {
+        font-size: 26px;
+      }
+    }
+    .text {
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .btn-ads {
+    width: 170px;
+    height: 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+
+    &:hover {
+      color: $primaryColor;
+      background-color: white;
+    }
+  }
+}
+.container-ads::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("./img/unsplash_ads.png");
+}

@@ -1,0 +1,111 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-header {
+  background-color: white;
+  margin: 0 auto;
+
+  .container-header-inside {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 8px 110px;
+    background-color: white;
+    z-index: 100;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(lg) {
+      padding: 8px 50px;
+    }
+  }
+}
+.box-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .box-img-company {
+    height: 48px;
+    width: 38px;
+  }
+  .title-company {
+    color: rgb(42, 85, 202);
+    font-weight: 800;
+    .span-company {
+      font-style: italic;
+    }
+  }
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  @include mq(lg) {
+    width: 120px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .icon-hamburger-menu {
+    display: none;
+    color: rgb(42, 85, 202);
+    font-size: 22px;
+    padding-left: 5px;
+    @include mq(lg) {
+      display: block;
+    }
+  }
+  .icon-close-menu {
+    display: none;
+    color: rgb(42, 85, 202);
+    font-size: 22px;
+    padding-left: 5px;
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    @include mq(lg) {
+      display: block;
+    }
+  }
+  .list-nav {
+    height: auto;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    z-index: 10;
+    @include mq(lg) {
+      background-color: white;
+      height: 140px;
+      width: 250px;
+      padding-left: 5px;
+      position: absolute;
+      top: 20px;
+      right: -400px;
+      transition: 0.4s ease-in-out;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 2px;
+    }
+    .li-nav {
+      font-size: 18px;
+      font-weight: 400;
+      @include mq(lg) {
+        font-size: 22px;
+      }
+    }
+    .li-nav:hover {
+      color: $secondaryColor;
+    }
+  }
+  .show-icon {
+    right: -30px;
+  }
+  .show {
+    right: -110px;
+  }
+}

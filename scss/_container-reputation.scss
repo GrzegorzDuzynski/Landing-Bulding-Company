@@ -1,0 +1,61 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-reputation {
+  margin: 0 auto;
+  padding: 0 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @include mq(lg) {
+    gap: 10px;
+  }
+  .box-title-reputation {
+    padding: 60px 0 20px 0;
+    @include mq(lg) {
+      padding: 20px 0;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+  .container-cards {
+    display: flex;
+    gap: 60px;
+    @include mq(lg) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card-reputation {
+      width: 300px;
+      height: 200px;
+      border: 1.4px solid $fourthColor;
+      border-radius: 4px;
+      padding: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      &:hover {
+        transform: rotate3d(1, 1, 1, -3deg);
+        box-shadow: inset 39px 28px 24px -22px rgb(245, 243, 243);
+      }
+
+      .box-img-reputation {
+        width: 40px;
+        height: 40px;
+      }
+      .text {
+        color: $fourthColor;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-stats {
+  margin: 0 auto;
+  padding: 0 110px 100px;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  @include mq(xl) {
+    flex-direction: column;
+  }
+
+  @include mq(lg) {
+    padding: 0 50px 100px;
+    justify-content: left;
+  }
+
+  .box-left {
+    position: relative;
+    width: 700px;
+    height: 530px;
+
+    .title {
+      font-size: 70px;
+      font-weight: 600;
+      @include mq(lg) {
+        font-size: 45px;
+      }
+    }
+    .text {
+      margin: 0 0 0 12px;
+      padding: 0 0 0 8px;
+      border-left: 4px solid $secondaryColor;
+    }
+    .box-projects {
+      height: 115px;
+      width: 260px;
+      background-color: white;
+      box-shadow: 5px 5px 10px 2px rgb(197, 194, 194);
+      padding: 0 0 0 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+      z-index: 1;
+      transition: 0.3 ease;
+      @include mq(lg) {
+        top: 160px;
+        left: 160px;
+      }
+
+      &:hover {
+        scale: 1.1;
+        z-index: 12;
+      }
+
+      .box-img {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        z-index: 10;
+      }
+    }
+    .box-clients {
+      height: 115px;
+      width: 200px;
+      background-color: white;
+      box-shadow: 5px 5px 10px 2px rgb(197, 194, 194);
+      padding: 0 0 0 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 90px;
+      left: 370px;
+      z-index: 2;
+      transition: 0.3 ease;
+      &:hover {
+        scale: 1.1;
+        z-index: 12;
+      }
+      .box-img {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        z-index: 10;
+      }
+    }
+    .box-awards {
+      height: 115px;
+      width: 200px;
+      background-color: white;
+      box-shadow: 5px 5px 10px 2px rgb(197, 194, 194);
+      padding: 0 0 0 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 270px;
+      left: 330px;
+      z-index: 2;
+      transition: 0.3 ease;
+      &:hover {
+        scale: 1.1;
+        z-index: 12;
+      }
+      .box-img {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        z-index: 10;
+      }
+    }
+    .box-years {
+      height: 115px;
+      width: 200px;
+      background-color: white;
+      box-shadow: 5px 5px 10px 2px rgb(197, 194, 194);
+      padding: 0 0 0 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 340px;
+      left: 190px;
+      z-index: 1;
+
+      transition: 0.3 ease;
+      &:hover {
+        scale: 1.1;
+        z-index: 12;
+      }
+      .box-img {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        z-index: 10;
+      }
+    }
+  }
+  .box-right {
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .title {
+      color: $primaryColor;
+      font-size: 60px;
+      font-weight: 700;
+      @include mq(lg) {
+        font-size: 40px;
+      }
+    }
+    .text {
+      font-size: 20px;
+    }
+    .btn-stats {
+      width: 140px;
+      height: 50px;
+      background-color: $primaryColor;
+      color: white;
+      border: 1px solid $primaryColor;
+      border-radius: 4px;
+      padding: 12px 15px;
+      &:hover {
+        background-color: white;
+        color: $primaryColor;
+      }
+    }
+  }
+}

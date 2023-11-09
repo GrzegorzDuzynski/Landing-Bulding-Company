@@ -36,7 +36,7 @@
 .box-title-hero {
   width: 600px;
   @include mq(lg) {
-    width: 400px;
+    width: auto;
   }
   .title-hero {
     color: rgb(24, 23, 23);
@@ -44,6 +44,9 @@
     font-weight: 600;
     @include mq(lg) {
       font-size: 45px;
+    }
+    @include mq(xs) {
+      font-size: 24px;
     }
   }
 }
@@ -59,13 +62,25 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @include mq(lg) {
+    height: auto;
+    width: auto;
+  }
+
   .box-feauture-projects-title-hero {
     padding: 20px;
+    @include mq(lg) {
+      padding: 10px;
+    }
     .title-feature-projects {
       color: white;
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 2px;
+      @include mq(lg) {
+        font-size: 16px;
+        font-weight: 500;
+      }
     }
   }
 
@@ -75,6 +90,9 @@
     font-weight: 400;
     text-align: center;
     display: none;
+    @include mq(lg) {
+      font-size: 18px;
+    }
   }
 
   .active-feauture-projects {
@@ -92,6 +110,9 @@
       word-spacing: 10px;
       &:hover {
         background-color: $primaryColor;
+      }
+      @include mq(lg) {
+        font-size: 14px;
       }
     }
     .btn-left {

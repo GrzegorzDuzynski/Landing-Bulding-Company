@@ -9,77 +9,100 @@
   flex-direction: column;
   align-items: center;
   @include mq(lg) {
-    padding: 60px 50px 100px;
+    padding: 20px 0 30px;
   }
 
   .box-title-services {
     padding: 40px;
-    .title-services {
-      font-size: 36px;
-      font-weight: 700;
+    @include mq(lg) {
+      padding: 20px;
     }
   }
-
-  .container-cards-services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: 40px;
-    column-gap: 80px;
+  .title-services {
+    font-size: 36px;
+    font-weight: 700;
     @include mq(lg) {
-      grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
-      grid-template-rows: repeat(3, 200px);
-      grid-auto-flow: column;
-      row-gap: 20px;
-      column-gap: 20px;
+      font-size: 24px;
     }
+  }
+}
+
+.container-cards-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 40px;
+  column-gap: 80px;
+  @include mq(lg) {
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: column;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  @include mq(sm) {
+    grid-template-columns: minmax(140px, 1fr) minmax(140px, 1fr);
+    grid-template-rows: repeat(3, 110px);
+    row-gap: 10px;
+  }
+  .box-card-services {
+    width: 270px;
+    height: 180px;
+    border-radius: 4px;
+    padding: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
     @include mq(sm) {
-      grid-template-columns: minmax(300px, 1fr);
-      grid-template-rows: repeat(6, 200px);
-      row-gap: 10px;
+      width: 140px;
+      height: 100px;
+      padding: 15px;
+      gap: 10px;
     }
-    .box-card-services {
-      width: 270px;
-      height: 180px;
-      border-radius: 4px;
-      padding: 30px;
-      cursor: pointer;
-      transition: 0.3s ease;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-
-      &:hover {
-        scale: 1.2;
-      }
-      .box-img-services {
-        width: 40px;
-        height: 40px;
-        position: relative;
-      }
-      .title-card {
-        font-size: 20px;
-        font-weight: 600;
-      }
-      .box-img-services::after {
-        content: "";
-        width: 60px;
-        height: 2px;
-        position: absolute;
-        bottom: -20px;
-        left: -10px;
-        background-color: $fourthColor;
+    &:hover {
+      scale: 1.2;
+    }
+    .box-img-services {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      @include mq(sm) {
+        width: 32px;
+        height: 32px;
       }
     }
-    .card-blue {
-      color: white;
-      background-color: $primaryColor;
+    .title-card {
+      font-size: 20px;
+      font-weight: 600;
+      @include mq(sm) {
+        font-size: 14px;
+      }
     }
-    .card-white {
-      color: $primaryColor;
-      background-color: white;
+    .box-img-services::after {
+      content: "";
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      bottom: -20px;
+      left: -10px;
+      background-color: $fourthColor;
+      @include mq(sm) {
+        width: 0;
+      }
     }
+  }
+  .card-blue {
+    color: white;
+    background-color: $primaryColor;
+  }
+  .card-white {
+    color: $primaryColor;
+    background-color: white;
   }
 }

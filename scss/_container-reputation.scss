@@ -11,6 +11,7 @@
   gap: 30px;
   @include mq(lg) {
     gap: 10px;
+    padding: 0 0 30px 0;
   }
   .box-title-reputation {
     padding: 60px 0 20px 0;
@@ -28,6 +29,7 @@
     @include mq(lg) {
       flex-direction: column;
       gap: 20px;
+      zoom: 0.8;
     }
     .card-reputation {
       width: 300px;
